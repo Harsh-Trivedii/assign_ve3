@@ -72,8 +72,7 @@ In this section of code, the Django view function handles a POST request, which 
        - The base64-encoded images are stored in a list (`context['plots']`) to be rendered on the web page.
 
 4. **Context Creation:**
-   - All th
-
+   - All the analysis results and plots are stored in a dictionary called `context`, which will be passed to the template for rendering on the web page.
 
 ## User Interface
 
