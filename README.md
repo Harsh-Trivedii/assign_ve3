@@ -37,3 +37,19 @@ This is a Django-based web application that allows users to upload CSV files, pe
      python manage.py runserver
      ```
 ### Step 4: Upload the csv file - sample_data.csv
+
+
+## Explanation-
+
+
+## User Interface
+
+### CSV File upload template-
+![file](images/img1.png)
+
+### Displays the results and visualizations on the web interface
+![result](images/img4.png)
+
+![result](images/img4.png)
+
+![result](images/img4.png)
