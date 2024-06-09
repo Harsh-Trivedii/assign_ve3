@@ -42,15 +42,15 @@ This is a Django-based web application that allows users to upload CSV files, pe
 
 ## Explanation-
 
-### Create Django project and Application
-### configure the app in settings.py
-### create forms.py and create a form for uploading csv files
-### create templates and static folder in root directory and configure them in settings.py file.
-### Inside views.py, create upload_file view that contains the main logic for file upload and data analysis
-#### Purpose
+### 1. Create Django project and Application
+### 2. Configure the app in settings.py
+### 3. Create forms.py and create a form for uploading csv files
+### 4. Create templates and static folder in root directory and configure them in settings.py file.
+### 5. Inside views.py, create upload_file view that contains the main logic for file upload and data analysis
+#### a) Purpose
 The purpose of the `upload_file` function is to receive the uploaded CSV file from the user, process it, and display the analysis results on the web interface. This function is responsible for reading the CSV file, performing data analysis tasks using pandas and numpy, generating visualizations, and rendering the results on the web page.
 
-#### Implementation
+#### b) Implementation
 The `upload_file` function is typically defined in the views.py file of a Django app. It is associated with a URL pattern that maps to a specific endpoint where users can access the file upload form. When a user submits the form with a CSV file, the `upload_file` function is called to handle the request.
 
 
