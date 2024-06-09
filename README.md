@@ -48,8 +48,8 @@ This is a Django-based web application that allows users to upload CSV files, pe
 ![file](images/img1.png)
 
 ### Displays the results and visualizations on the web interface
-![result](images/img4.png)
+![result](images/img2.png)
 
-![result](images/img4.png)
+![result](images/img3.png)
 
 ![result](images/img4.png)
