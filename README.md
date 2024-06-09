@@ -51,7 +51,28 @@ This is a Django-based web application that allows users to upload CSV files, pe
 The purpose of the `upload_file` function is to receive the uploaded CSV file from the user, process it, and display the analysis results on the web interface. This function is responsible for reading the CSV file, performing data analysis tasks using pandas and numpy, generating visualizations, and rendering the results on the web page.
 
 #### b) Implementation
-The `upload_file` function is typically defined in the views.py file of a Django app. It is associated with a URL pattern that maps to a specific endpoint where users can access the file upload form. When a user submits the form with a CSV file, the `upload_file` function is called to handle the request.
+##### Explanation of Data Analysis Process
+
+In this section of code, the Django view function handles a POST request, which typically occurs when a user submits a form. Here's a brief explanation of each step:
+
+1. **Form Validation:** 
+   - The code checks if the submitted form data is valid using the `is_valid()` method of the form object.
+
+2. **File Processing:**
+   - If the form data is valid, the uploaded CSV file is extracted from the form data.
+   - The CSV file is read into a pandas DataFrame using `pd.read_csv()`.
+
+3. **Data Analysis:**
+   - Basic data analysis tasks are performed on the DataFrame:
+     - The first few rows of the data are extracted and converted to HTML format for display.
+     - Summary statistics (mean, median, standard deviation) are calculated for numerical columns and converted to HTML format for display.
+     - Missing values in the DataFrame are identified, counted, and converted to HTML format for display.
+     - Histogram plots are generated for numerical columns using matplotlib and seaborn:
+       - For each numerical column, a histogram plot is created and converted to a base64-encoded image for display on the web page.
+       - The base64-encoded images are stored in a list (`context['plots']`) to be rendered on the web page.
+
+4. **Context Creation:**
+   - All th
 
 
 ## User Interface
